@@ -10,7 +10,7 @@ created_at current timestamp,
 select * from user;
 
 
-/*board table* 게시판 테이블s/
+/*board table* 게시판 테이블ss/
 create table board(
 board_id bigint auto_increment primary key,
 title varchar(20) not null,
