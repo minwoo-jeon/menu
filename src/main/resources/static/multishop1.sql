@@ -29,6 +29,30 @@ INSERT INTO category (cart_code,CART_NAME,CART_DESC) VALUES('2','주류','하이
 SELECT * FROM category 
 
 
+/* 수정 */
+
+create table menu(
+    id bigint auto_increment primary key,
+    name varchar(20) not null,
+    price int not null
+);
+
+create table category(
+    id bigint auto_increment primary key ,
+    name varchar(20) not null,
+    priority int not null
+);
+
+create table menu_category(
+    id bigint auto_increment primary key,
+    menu_id bigint not null,
+    category_id bigint not null,
+    unique (menu_id, category_id)
+);
+
+select menu.* from menu join menu_category mc on menu.id = mc.menu_id
+where category_id = 2;
+
 
 
 
