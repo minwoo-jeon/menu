@@ -1,4 +1,4 @@
-/* 2023-10-09 게시판 테이블 db설계 연습하기1*/
+/* 2023-10-09 게시판 테이블 db설계 연습하기2*/
 /*user talbe * 회원테이블/
 create table user(
 user_id bigint auto_increment primary key,
